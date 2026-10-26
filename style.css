@@ -365,7 +365,7 @@ button:focus-visible {
 
 /* Short screens, including landscape phones */
 
-@media (max-height: 500px) {
+@media (max-height: 700px) {
     .navbar {
         height: 42px;
     }
