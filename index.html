@@ -1,0 +1,155 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shine Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    
+<header class="navbar">
+    <a href="#" class="logo">
+        <span class="logo-icon">✦</span>
+        Shine Calculator
+    </a>
+
+    <div class="view-switch" role="group" aria-label="Choose layout">
+        
+        <button
+            type="button"
+            id="themeToggle"
+            class="theme-toggle"
+            aria-label="Switch to light mode"
+            aria-pressed="false"
+            >
+            <span class="theme-icon">☀</span>
+            <span class="theme-label">Light</span>
+        </button>
+
+        <button
+            type="button"
+            class="view-btn active"
+            data-view="web"
+            aria-pressed="true"
+        >
+            Web
+        </button>
+
+        <button
+            type="button"
+            class="view-btn"
+            data-view="phone"
+            aria-pressed="false"
+        >
+            Phone
+        </button>
+    </div>
+
+    <span class="status">SMART CALCULATOR</span>
+</header>
+
+    <main class="main-container">
+
+        <section class="intro">
+            <span class="tag">SIMPLE · FAST · SMART</span>
+            <h1>Calculate with <span>Shine.</span></h1>
+            <p>Your everyday calculations, made simple.</p>
+        </section>
+
+        <section class="calculator" aria-label="Shine Calculator">
+
+            <div class="calc-heading">
+                <div>
+                    <h2>Calculator</h2>
+                    <p>Standard mode</p>
+                </div>
+                <div class="calc-icon">✦</div>
+            </div>
+
+            <div class="display">
+                <div id="history" class="history" aria-live="polite"></div>
+                <input
+                    id="result"
+                    type="text"
+                    value="0"
+                    readonly
+                    aria-label="Calculation result"
+                >
+            </div>
+
+            <div class="buttons">
+                <button class="function" data-action="clear">AC</button>
+                <button class="function" data-action="delete">DEL</button>
+                <button class="function" data-action="percent">%</button>
+                <button class="operator" data-operator="/">÷</button>
+
+                <button data-number="7">7</button>
+                <button data-number="8">8</button>
+                <button data-number="9">9</button>
+                <button class="operator" data-operator="*">×</button>
+
+                <button data-number="4">4</button>
+                <button data-number="5">5</button>
+                <button data-number="6">6</button>
+                <button class="operator" data-operator="-">−</button>
+
+                <button data-number="1">1</button>
+                <button data-number="2">2</button>
+                <button data-number="3">3</button>
+                <button class="operator" data-operator="+">+</button>
+
+                <button class="function" data-action="sign">+/−</button>
+                <button data-number="00">00</button>
+                <button data-number="0">0</button>
+                <button data-action="decimal">.</button>
+
+                <button class="equal" data-action="equals">=</button>
+            </div>
+
+            <p class="calc-footer">
+                <span class="live-dot"></span>
+                Ready to calculate
+            </p>
+        </section>
+
+        <section class="features">
+            <div class="feature">
+                <span>✦</span>
+                <div>
+                    <h3>Easy to Use</h3>
+                    <p>Simple and clean interface</p>
+                </div>
+            </div>
+
+            <div class="feature">
+                <span>⚡</span>
+                <div>
+                    <h3>Quick Results</h3>
+                    <p>Calculate in seconds</p>
+                </div>
+            </div>
+
+            <div class="feature">
+                <span>▣</span>
+                <div>
+                    <h3>Responsive</h3>
+                    <p>Works on phones and PCs</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        © 2026 Shine Calculator · Made for everyday calculations
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
